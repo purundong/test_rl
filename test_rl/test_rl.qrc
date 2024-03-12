@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/test_rl">
+        <file>fixed.png</file>
+        <file>R-C.png</file>
+    </qresource>
+</RCC>

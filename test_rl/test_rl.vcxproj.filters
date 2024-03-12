@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="test_rl.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="test_rl.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="test_rl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="test_rl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="state\state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="state\ui\ui_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rm_algorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rand_num.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="state\action.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="state\ui\ui_reword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="state\ui\ui_state_transfers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="delegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\ui\ui_dynamic_programming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="state\ui\ui_state_info.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="concrete_solve_notify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\ui\ui_monte_carlo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\dynamic_programming_solve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\monte_carlo_solve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\ui\access.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\temporal_difference_solve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\ui\ui_monte_carlo_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\abstract_solve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\ui\ui_td_solve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\ui\ui_td_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="state\state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rm_algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rand_num.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="state\action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="concrete_solve_notify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solve\dynamic_programming_solve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solve\monte_carlo_solve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solve\ui\access.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solve\temporal_difference_solve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solve\abstract_solve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="state\ui\ui_state.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="state\ui\ui_reword.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="state\ui\ui_state_transfers.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="solve\ui\ui_dynamic_programming.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="state\ui\ui_state_info.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="solve\ui\ui_monte_carlo.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="solve\ui\ui_monte_carlo_state.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="solve\ui\ui_td_solve.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="solve\ui\ui_td_state.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="state\ui\ui_state.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="state\ui\ui_reword.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="state\ui\ui_state_transfers.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="solve\ui\ui_dynamic_programming.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="state\ui\ui_state_info.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="solve\ui\ui_monte_carlo.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="solve\ui\ui_monte_carlo_state.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="solve\ui\ui_td_solve.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="solve\ui\ui_td_state.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>
