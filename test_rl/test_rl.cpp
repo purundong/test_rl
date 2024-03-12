@@ -69,6 +69,7 @@ void test_rl::menu_set_rewards()
 	auto* s_ui = dynamic_cast<ui_state*>(ui.tableWidget->cellWidget(row, col));
 	if (s_ui == nullptr) return;
 	s_ui->get_state()->make_set_reword()->exec();
+	s_ui->show_state();
 }
 
 void test_rl::menu_set_transfers()
