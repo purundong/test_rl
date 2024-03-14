@@ -5,9 +5,8 @@ class ui_td_state;
 
 class temporal_difference_solve : public monte_carlo_solve
 {
-private:
-	std::unordered_map<state_ptr, ui_td_state*> _map_td_state;
 protected:
+	std::unordered_map<state_ptr, ui_td_state*> _map_td_state;
 	double _lamda{ 0.005 };
 public:
 	temporal_difference_solve(double gama, double error, solve_notify* notify);

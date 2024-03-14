@@ -54,7 +54,7 @@ void action::update_value(const double& gama)
 	auto value = 0.0;
 	for (auto& [name, s] : _state_transfer) {
 		auto state_obj = std::get<0>(s).lock();
-		value += state_obj->reward_expectations() + gama * state_obj->value();
+		value += state_obj->reward_expectations() + gama * std::get<1>(s) * state_obj->value();
 	}
 	_value = value;
 }

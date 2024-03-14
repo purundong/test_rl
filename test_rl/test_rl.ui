@@ -284,6 +284,16 @@
               <string>时序差分</string>
              </property>
             </item>
+            <item>
+             <property name="text">
+              <string>onpolicy qlearning</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>offpolicy qlearning</string>
+             </property>
+            </item>
            </widget>
           </item>
           <item>

@@ -145,6 +145,13 @@ reward state::sample_reword()
 	return rewards[a];
 }
 
+action_ptr state::max_action()
+{
+	auto fun = [](const auto& a, const auto& b) {return a.second->value() < b.second->value(); };
+	auto max = std::max_element(_map_action->begin(), _map_action->end(), fun);
+	return max->second;
+}
+
 QColor state::get_color()
 {
 	auto rewrod = reward_expectations();
@@ -225,8 +232,10 @@ std::vector<double> state::get_policy()
 void state::update_value()
 {
 	_value = 0.0;
-	for (auto& [action_type, action_obj] : *_map_action)
-		_value += action_obj->value();
+	for (auto& [action_type, action_obj] : *_map_action) {
+		_value += _policy[action_type] * action_obj->value();
+	}
+
 }
 
 void state::update_policy_for_greedy()

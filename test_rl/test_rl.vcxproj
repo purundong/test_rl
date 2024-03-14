@@ -101,6 +101,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="solve\off_policy_qlearning_solve.cpp" />
+    <ClCompile Include="solve\on_policy_qlearning_solve.cpp" />
     <ClCompile Include="solve\dynamic_programming_solve.cpp" />
     <ClCompile Include="solve\monte_carlo_solve.cpp" />
     <ClCompile Include="solve\ui\access.cpp" />
@@ -138,6 +140,8 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="solve\ui\ui_monte_carlo_state.h" />
+    <ClInclude Include="solve\off_policy_qlearning_solve.h" />
+    <ClInclude Include="solve\on_policy_qlearning_solve.h" />
     <ClInclude Include="solve\dynamic_programming_solve.h" />
     <ClInclude Include="solve\monte_carlo_solve.h" />
     <ClInclude Include="solve\ui\access.h" />

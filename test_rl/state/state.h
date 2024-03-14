@@ -59,6 +59,7 @@ public:
 public:
 	action_ptr sample_action(); //根据策略抽样一个动作
 	reward sample_reword(); //采样一个奖励
+	action_ptr max_action(); //获取当前状态的最优动作
 public:
 	QColor get_color(); //获取当前状态的颜色
 	std::shared_ptr<QDialog> make_set_reword(); //获取当前状态的控件

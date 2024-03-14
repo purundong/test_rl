@@ -8,6 +8,7 @@
 #include "solve/dynamic_programming_solve.h"
 #include "solve/monte_carlo_solve.h"
 #include "solve/temporal_difference_solve.h"
+#include "solve/on_policy_qlearning_solve.h"
 
 test_rl::test_rl(QWidget* parent)
 	: QWidget(parent)
@@ -150,6 +151,14 @@ void test_rl::on_comboBox_mode_currentIndexChanged(int index)
 		_solve = std::make_shared<monte_carlo_solve>(ui.doubleSpinBox_gama->value(), ui.doubleSpinBox_error->value(), this);
 	}break;
 	case 2:
+	{
+		_solve = std::make_shared<temporal_difference_solve>(ui.doubleSpinBox_gama->value(), ui.doubleSpinBox_error->value(), this);
+	}break;
+	case 3:
+	{
+		_solve = std::make_shared<on_policy_qlearning_solve>(ui.doubleSpinBox_gama->value(), ui.doubleSpinBox_error->value(), this);
+	}break;
+	case 4:
 	{
 		_solve = std::make_shared<temporal_difference_solve>(ui.doubleSpinBox_gama->value(), ui.doubleSpinBox_error->value(), this);
 	}break;

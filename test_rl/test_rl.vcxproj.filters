@@ -100,6 +100,12 @@
     <ClCompile Include="solve\ui\ui_td_state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="solve\on_policy_qlearning_solve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="solve\off_policy_qlearning_solve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="state\state.h">
@@ -133,6 +139,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="solve\abstract_solve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solve\on_policy_qlearning_solve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solve\off_policy_qlearning_solve.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
